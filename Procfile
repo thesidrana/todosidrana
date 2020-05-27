@@ -1,1 +1,1 @@
-web: gunicorn todosidrana.wsgi
+web: gunicorn django_project.wsgi
