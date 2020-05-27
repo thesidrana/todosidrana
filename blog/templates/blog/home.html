@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{%block content%}
+    {% if user.is_authenticated %}
+      {% for post in posts %}
+        {% ifequal post.author request.user%}
+          <article class="media content-section">
+              <div class="media-body">
+                <div class="article-metadata">
+                  <a class="username" href="#">{{ post.author }}</a>
+                  <small class="text-muted">{{ post.date_on|date:'d F, Y' }}</small>
+                </div>
+                <h2><a class="article-title" href="{%url 'post-detail' post.id%}">{{ post.title }}</a></h2>
+                <p class="article-content">{{ post.content }}</p>
+              </div>
+            </article>
+          {%endifequal%}
+      {% endfor %}
+    {%else%}
+      <div class="logo1">
+      <div class = "sid"><h1>MAKE A</h1></div>
+      <div class = "rana"><h1>TO-DO</h1></div>
+      <div class = "sid"><h1>LIST</h1></div>
+      </div>
+    {%endif%}
+{%endblock content%}
