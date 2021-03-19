@@ -11,7 +11,7 @@ kiwisolver==1.2.0
 lxml==4.4.1
 matplotlib==3.2.1
 numpy==1.18.4
-Pillow==7.1.2
+Pillow==8.1.1
 pygame==1.9.6
 pyparsing==2.4.7
 python-dateutil==2.8.1
