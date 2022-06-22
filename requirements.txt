@@ -10,7 +10,7 @@ idna==2.9
 kiwisolver==1.2.0
 lxml==4.4.1
 matplotlib==3.2.1
-numpy==1.18.4
+numpy==1.22.0
 Pillow==7.1.2
 pygame==1.9.6
 pyparsing==2.4.7
